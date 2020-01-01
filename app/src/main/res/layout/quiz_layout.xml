@@ -12,13 +12,13 @@
         android:id="@+id/question"
         android:layout_width="300dp"
         android:layout_height="250dp"
+        android:src="@drawable/welcomeb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325"
-        android:src="@drawable/welcomeb" />
+        app:layout_constraintVertical_bias="0.325" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -28,6 +28,7 @@
         android:layout_marginLeft="76dp"
         android:layout_marginTop="108dp"
         android:text="A"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question" />
 
@@ -38,6 +39,7 @@
 
         android:layout_marginTop="108dp"
         android:text="B"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toEndOf="@+id/radioButton"
@@ -50,6 +52,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginLeft="76dp"
         android:layout_marginTop="32dp"
+        android:visibility="gone"
         android:text="C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
@@ -58,6 +61,7 @@
         android:id="@+id/radioButton4"
         android:layout_width="57dp"
         android:layout_height="39dp"
+        android:visibility="gone"
         android:layout_marginTop="32dp"
         android:text="D"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,17 +86,15 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:layout_marginEnd="52dp"
         android:layout_marginRight="52dp"
-        android:src="@drawable/left_black"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/button_shape"
+        android:src="@drawable/left_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -119,5 +121,32 @@
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="45dp"
+        android:text="your answer A"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="88dp"
+        android:text="Correct Answer A"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
